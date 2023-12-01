@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="SurpriseMe.css" />
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="font-awesome.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="SurpriseMe.html">Search ID</a></li>
+          <li><a href="aboutPage.html">About</a></li>
+          <li><a href="searchName.html">Search Movie</a></li>
+          <li><a href="favorites.html">Favorites Movies</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="searchContainer">
+        <button id="surpiseMeBtn">Surpise Me!</button> <!-- שיניתי את ה-ID ל-searchIdBtn -->
+        <input id="idInput" type="text" placeholder="Enter Movie ID" />
+        <button id="searchIdBtn">Find My Movie!</button> <!-- שיניתי את ה-ID ל-searchIdBtn -->
+      </div>
+      <div class="container">
+        <div class="moviePosterClass"></div>
+        <div class="movieContainer">
+          <h1 id="headline">headline</h1>
+          <div class="movieDataContainer">
+            <div class="movieData">
+              <div class="overviewContainer">
+                <h3>OVERVIEW</h3>
+                <hr />
+                <p id="movieOverview"></p>
+              </div>
+              <div class="trailerContainer">
+                <h3>MEDIA</h3> <!-- שיניתי את הכיתוב מ-"MADIA" ל-"MEDIA" -->
+                <hr />
+                <div class="trailer"></div>
+              </div>
+              <div class="castContainer">
+                <h3>TOP CAST</h3>
+                <hr />
+                <div class="cast"></div>
+              </div>
+            </div>
+            <div class="movieInfoContainer">
+              <p>Director:</p>
+              <span id="director"></span>
+              <p>Writer:</p>
+              <span id="writer"></span>
+              <p>Release Date:</p>
+              <span id="releaseDate"></span>
+              <p>Run Time:</p> <!-- שיניתי את השורה ל-"Run Time" במקום "RunTime" -->
+              <span id="runTime"></span>
+              <p>Genres:</p>
+              <span id="genres"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="description">
+        <h3>Welcome to Marvel Wiki!</h3>
+        <p> 
+            On this website you can find a lot of data
+            about different Movies in the MCU that will 
+            help you learn about our Movies and the history of the MCU.
+            <br> Have a nice time!
+        </p>
+      </div>
+      <div class="links">
+        <div class="projects">
+          <p>Projects</p>
+          <ul>
+            <li><a href="https://matantalmid.github.io/CV-Page/">CV Page</a></li>
+            <li><a href="https://matantalmid.github.io/Austria-Site/">Austria Site</a></li>
+            <li><a href="https://matantalmid.github.io/Flex-Project/">Flex Project</a></li>
+          </ul>
+        </div>
+        <div class="community">
+          <p>Community</p>
+          <ul>
+            <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/matan-talmid-880054277/">LinkedIn</a></li>
+            <li><i class="fa-brands fa-square-github"></i><a href="https://github.com/Matantalmid">GitHub</a></i></li>
+            <li><i class="fa-brands fa-instagram"></i><a href="">Instagram</a></li>
+            <li><i class="fa-brands fa-square-facebook"></i><a href="">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="help">
+          <p>Help</p>
+          <ul>
+            <li><a href="./contact us page/contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="SurpriseMe.js"></script>
+  </body>
+</html>

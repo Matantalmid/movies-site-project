@@ -1,0 +1,132 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 10vh 100vh 1fr 1fr 10vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-color: #222;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body i {
+  font-family: "FontAwesome" !important;
+}
+
+main {
+  grid-area: 2 / 2 / 5 / 6;
+}
+
+.container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container #haedLinePage span {
+  color: #bbd111;
+}
+
+.moveisListContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movieContiner {
+  position: relative;
+  display: flex;
+  margin: 0.5vw;
+  padding: 1vw;
+  border-radius: 9px;
+  background-size: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.767) 10%,
+    rgba(0, 0, 0, 0.453) 30%,
+    rgba(0, 0, 0, 0) 55%
+  );
+}
+
+#backgroundImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+#moviePoster {
+  width: 12vw;
+  margin: 0 1vw 0 0;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.774);
+}
+
+.movieData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movieData h1 {
+  color: #000000;
+  text-shadow: #ffffff 0 0 10px;
+}
+
+.movieData #overview {
+  color: #bbd111;
+  font-weight: 800;
+  font-size: 1.3vw;
+  text-shadow: #000000 0 0 10px;
+}
+
+.movieData #releaseDate,
+#director,
+#genres,
+#runTime {
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 0 1% 0 1%;
+  margin: 0.1rem;
+  margin-left: 0.8rem;
+  background-color: rgba(77, 77, 77, 0.53);
+  color: #bbd111;
+}
+
+.genre_director_runtime_class {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.genre_director_runtime_class > div:nth-child(1) {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.genre_director_runtime_class > div:nth-child(2) {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.genre_director_runtime_class > div:nth-child(3) {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}

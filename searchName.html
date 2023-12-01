@@ -3,16 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="stlye.css" />
+    <title>Search Movie</title>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="searchName.css" />
   </head>
   <body>
     <header>
@@ -28,16 +22,9 @@
     </header>
     <main>
       <div class="container">
-        <div class="sliderContainer">
-          <div class="swiper">
-            <div class="swiper-wrapper"></div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-
-        <div class="trendingMovies"></div>
+        <h1 id="haedLinePage">Search Your <span>Movie</span></h1>
+        <input id="searchInput" type="text" placeholder="ex: Batman" />
+        <div class="moveisListContainer"></div>
       </div>
     </main>
     <footer>
@@ -104,7 +91,6 @@
       src="https://kit.fontawesome.com/369a8e9316.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="searchName.js"></script>
   </body>
 </html>

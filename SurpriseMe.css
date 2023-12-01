@@ -1,0 +1,247 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 10% 20% 20% 20% 20% 10%;
+  grid-template-rows: 10vh 1fr 1fr 1fr 10vh;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-position: top 65px right 0px;
+  background-position: fixed;
+  background-color: #222;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body i {
+  font-family: "FontAwesome" !important;
+}
+
+body::before {
+  content: "";
+  grid-area: 2 / 1 / 5 / 7;
+  background-color: #22222281;
+}
+
+main {
+  grid-area: 2 / 2 / 5 / 6;
+}
+
+.searchContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+#idInput {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+#searchIdBtn {
+  width: 15%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #bbd111;
+  border: 2px solid black;
+  font-weight: 700;
+}
+
+#surpiseMeBtn {
+  width: 15%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  border: 2px solid black;
+  font-weight: 700;
+}
+
+#surpiseMeBtn:hover {
+  background-image: linear-gradient(to right, red 25%, yellow 60%, blue 85%);
+}
+
+.container {
+  width: 80vw;
+  height: 1fr;
+  display: flex;
+  justify-self: center;
+  margin-top: 9rem;
+}
+
+.moviePosterClass {
+  width: 30%;
+  height: 100%;
+  padding: 0.5rem;
+  background-color: #b0b0b009;
+  backdrop-filter: blur(5px);
+}
+
+#moviePosterImg {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#watchTrailerBtn {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  background-color: #bbd111;
+  cursor: pointer;
+  border: 0;
+  font-size: larger;
+  font-weight: 800;
+  text-shadow: #fff 0px 0px 10px;
+}
+
+.movieContainer {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+/* Headline styles */
+#headline {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.movieDataContainer {
+  display: flex;
+  width: 100%;
+}
+
+.movieData {
+  width: 75%;
+  height: 95%;
+  padding: 0.5rem;
+}
+
+.overviewContainer {
+  background-color: #b0b0b009;
+  backdrop-filter: blur(5px);
+  padding: 0.5rem;
+}
+
+.overviewContainer h3 {
+  margin-bottom: 0.5rem;
+  color: #bbd111;
+}
+
+.overviewContainer span {
+  font-size: 1.2rem;
+}
+
+#movieOverview {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.trailerContainer {
+  margin: 0.5rem 0 0 0;
+  background-color: #b0b0b009;
+  backdrop-filter: blur(5px);
+  padding: 0.5rem;
+}
+
+.trailerContainer h3 {
+  margin-bottom: 0.5rem;
+  color: #bbd111;
+}
+
+.trailer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.castContainer {
+  width: 100%;
+  height: 30rem;
+  margin: 0.5rem 0 0 0;
+  background-color: #b0b0b009;
+  backdrop-filter: blur(5px);
+  padding: 0.5rem;
+  position: relative;
+}
+
+.castContainer h3 {
+  margin-bottom: 0.5rem;
+  color: #bbd111;
+}
+
+.cast {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-x: scroll;
+}
+
+.castMember {
+  width: 33%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.castImg {
+  width: 9vw;
+  height: 8vw;
+  border-radius: 100%;
+}
+
+.movieInfoContainer {
+  width: 20%;
+  height: 29.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 0 1.5rem;
+  background-color: #b0b0b009;
+  backdrop-filter: blur(5px);
+  padding: 0.5rem;
+}
+.movieInfoContainer p {
+  margin: 20% 0 5% 0;
+  color: #bbd111;
+}
+
+.movieInfoContainer #genres {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movieInfoContainer #genres span {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  padding: 0 3% 0 3%;
+  margin: 0.1rem;
+  background-color: rgba(77, 77, 77, 0.53);
+  color: #bbd111;
+}
