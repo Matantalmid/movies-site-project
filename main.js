@@ -116,11 +116,10 @@ function showSlider(movieDataArray) {
     },
   });
 
-  screenview.addEventListener("change", function(){
+  screenview.addEventListener("change", function () {
     showSlider(movieDataArray);
-  })
+  });
 }
-
 
 // ------------------------------------------------
 

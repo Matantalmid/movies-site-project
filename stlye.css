@@ -63,7 +63,7 @@ main {
 
 .movieData h1 {
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-shadow: #000000 0 0 10px;
 }
 
@@ -86,6 +86,7 @@ main {
 
 .timeDataGenreClass {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -102,6 +103,7 @@ main {
 .timeDataGenreClass > div:nth-child(3) {
   width: 60%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -234,19 +236,48 @@ main {
     width: 100vw;
   }
   .sliderContainer {
-    height: 60vh;
-    margin: 5vh 2vh 5vh 2vh ;
-    border: 1px solid rgba(255, 255, 255, 0.391);
-    border-radius: 10px
+    height: 70vh;
+    margin: 5vh 2vh 5vh 2vh;
+    border-radius: 10px;
+    overflow-x: hidden;
   }
   .swiper {
     height: 100%;
-    border-radius: 5px
-
+    border-radius: 5px;
   }
-  .swiper-slide img{
-    height:100%;
-    border-radius: 10px
+  .swiper-slide img {
+    position: sticky;
+    height: 100%;
+    border-radius: 10px;
+  }
 
+  .movieData h1 {
+    font-size: 10vw;
+    padding: 1rem;
+  }
+
+  .movieData p {
+    width: 100%;
+    height: 60%;
+    color: #e6db12;
+    text-shadow: #000000 0 0 5px;
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  .timeDataGenreClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .timeDataGenreClass > div:nth-child(1) {
+    width: 100%;
+  }
+  .timeDataGenreClass > div:nth-child(2) {
+    width: 100%;
+  }
+  .timeDataGenreClass > div:nth-child(3) {
+    width: 100%;
   }
 }
