@@ -61,7 +61,7 @@ function showSlider(movieDataArray) {
           <img id="sliderImg" src="//image.tmdb.org/t/p/original/${data.poster_path}" />
           <div class="movieData">
             <h1>${data.original_title}</h1>
-            <p>${data.overview}</p>
+            <p>${data.tagline}</p>
             <div class="timeDataGenreClass">
               <div>
                 <i class="fa-solid fa-calendar-days" style="color: #ffffff;">
