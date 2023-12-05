@@ -139,7 +139,6 @@ main {
 
 .navBarTrending {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -179,7 +178,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 1;
   padding: 10%;
   border-radius: 5px;
   opacity: 0;
@@ -267,11 +265,40 @@ main {
 
   .timeDataGenreClass > div:nth-child(1) {
     width: 100%;
+    margin: 0 0 1vh 0;
   }
   .timeDataGenreClass > div:nth-child(2) {
     width: 100%;
+    margin: 0 0 1vh 0;
   }
   .timeDataGenreClass > div:nth-child(3) {
     width: 100%;
+    margin: 0 0 1vh 0;
+  }
+  .navBarTrending {
+    margin: 0 1vh 0 1vh;
+  }
+
+  .moviesContainer {
+    margin: 1vh  0 5vh 1vh;
+  }
+
+  .movieCard {
+    width: 30vw;
+  }
+  #movieCardImg {
+    width: 30vw;
+  }
+
+  .titleDateContainer h2{
+    font-size: 100%;
+  }
+
+  .titleDateContainer p{
+    font-size: 70%;
+  }
+
+  .runTimeRateContainer{
+    font-size: 60%;
   }
 }

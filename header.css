@@ -1,6 +1,6 @@
 header {
   grid-area: 1 / 1 / 2 / 7;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   justify-content: center;
   background-color: rgb(43, 38, 38);
@@ -16,7 +16,7 @@ header nav ul {
   align-items: center;
   padding: 0;
   margin: 0 3vh 0 3vh;
-  height: 10vh;
+  height: 7vh;
 }
 
 header ul img {
