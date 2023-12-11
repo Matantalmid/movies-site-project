@@ -12,27 +12,25 @@ html {
 
 body {
   margin: 0;
-  width: 100vw;
+  /* width: 100vw; */
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: 10vh 1fr 1fr 1fr 10vh;
+  grid-template-rows: 7vh 1fr 1fr 1fr 10vh;
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  background-position: top 65px right 0px;
-  background-position: fixed;
+  background-size: 100vw;
   background-color: #222;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body i {
   font-family: "FontAwesome" !important;
 }
 
-body::before {
+/* body::before {
   content: "";
   grid-area: 2 / 1 / 5 / 7;
   background-color: #22222281;
-}
+} */
 
 main {
   grid-area: 2 / 2 / 5 / 6;
@@ -43,7 +41,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 5vh;
 }
 
 #idInput {
@@ -80,7 +78,6 @@ main {
 
 .container {
   width: 80vw;
-  height: 1fr;
   display: flex;
   justify-self: center;
   margin-top: 9rem;
@@ -244,4 +241,44 @@ main {
   margin: 0.1rem;
   background-color: rgba(77, 77, 77, 0.53);
   color: #bbd111;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-area: 2 / 1 / 2 / 7;
+  }
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+  }
+
+  .searchContainer {
+    margin-top: 1vh;
+  }
+
+  .moviePosterClass {
+    align-self: center;
+    width: 90%;
+    background-color: #ffffff00;
+    backdrop-filter: blur(0);
+  }
+
+  .movieContainer {
+    width: 100%;
+    margin: 0;
+  }
+  .movieDataContainer {
+    flex-direction: column;
+  }
+
+  .movieData {
+    width: 100%;
+  }
+  .movieInfoContainer {
+    width: 100%;
+    margin: 0;
+  }
 }

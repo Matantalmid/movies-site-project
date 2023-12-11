@@ -27,6 +27,7 @@ function showMovie(data) {
   <img id="moviePosterImg" src="//image.tmdb.org/t/p/w500/${data.poster_path}">
   <button id="watchTrailerBtn">Watch Trailer</button>`;
 
+  const movieContainer = document.querySelector(".movieContainer");
   const headline = document.getElementById("headline");
   headline.innerText = `${data.original_title}`;
 
@@ -49,8 +50,8 @@ function showMovie(data) {
     runTime.innerText = `${runTimeNumber}` + "m";
   }
 
-  data.genres.forEach((genere) => {
-    genres.innerHTML += `<span>${genere.name}</span>`;
+  data.genres.forEach((genre) => {
+    genres.innerHTML += `<span>${genre.name}</span>`;
   });
 }
 
