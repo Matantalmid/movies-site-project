@@ -11,11 +11,11 @@ html {
 }
 
 body {
+  width: 100vw;
   margin: 0;
-  /* width: 100vw; */
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: 7vh 1fr 1fr 1fr 10vh;
+  grid-template-rows: 7vh  1fr 10vh;
   background-repeat: no-repeat;
   background-size: 100vw;
   background-color: #222;
@@ -266,6 +266,10 @@ main {
     backdrop-filter: blur(0);
   }
 
+  #headline{
+    padding: 1vh;
+  }
+
   .movieContainer {
     width: 100%;
     margin: 0;
@@ -280,5 +284,13 @@ main {
   .movieInfoContainer {
     width: 100%;
     margin: 0;
+  }
+
+  .movieInfoContainer{
+    height:auto;
+  }
+
+  .movieInfoContainer p{
+    margin: 2vh 0 1vh 0
   }
 }
