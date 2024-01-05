@@ -48,7 +48,7 @@ main {
 .movieContiner {
   position: relative;
   display: flex;
-  margin: 0.5vw;
+  margin: 1vw;
   padding: 1vw;
   border-radius: 9px;
   background-size: 100%;
@@ -129,4 +129,58 @@ main {
   width: 10%;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    grid-area: 2 / 1 / 5 / 7;
+  }
+  
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .moveisListContainer{
+    width: 100%;
+  }
+
+  .movieContiner{
+    height: 20vh;
+    overflow: scroll;
+  }
+
+  #moviePoster{
+    width: 27vw;
+  }
+  .movieData h1{
+    font-size: 7vw;
+  }
+
+  .movieData #overview{
+    font-size: 3vw;
+  }
+
+  .genre_director_runtime_class{
+    display: block;
+  }
+
+  .genre_director_runtime_class > div:nth-child(1){
+    width: 100%;
+  }
+  .genre_director_runtime_class > div:nth-child(2){
+    width: 100%;
+  }
+
+  .movieData #releaseDate, #director, #genres, #runTime{
+    font-size: 3vw;
+  }
+
+  .movieData #genres{
+    margin: 1vw;
+  }
+
+  
 }

@@ -68,6 +68,7 @@ function fetchMovieCredits() {
 }
 
 function showMovieCredits(data) {
+  const movieInfoContainer = document.querySelector(".movieInfoContainer");
   data.crew.forEach((manCrew) => {
     if (manCrew.job == "Director") {
       director.innerText = `${manCrew.name}`;

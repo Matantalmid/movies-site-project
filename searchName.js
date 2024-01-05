@@ -72,12 +72,8 @@ function showMovie(movie) {
         <i class="fa-solid fa-calendar-days" style="color: #ffffff;">
         </i><p id="releaseDate">${movie.release_date}</p>
       </div>
-      <p id="overview">${movie.overview}</p>
+      <p id="overview">${movie.tagline}</p>
       <div class="genre_director_runtime_class">
-        <div>
-        <i class="fa-solid fa-chair" style="color: #ffffff;"></i>
-        ${director}
-        </div>
         <div>
         <i class="fa-solid fa-dna" style="color: #ffffff;"></i>
         ${genreList}
