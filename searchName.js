@@ -19,7 +19,7 @@ function fetchMovies() {
 
 const searchInput = document.querySelector("#searchInput");
 
-searchInput.addEventListener("input", () => {
+searchInput.addEventListener("change", () => {
   inputValue = searchInput.value;
   moveisListContainer.innerHTML = "";
   fetchMovies();
@@ -87,4 +87,3 @@ function showMovie(movie) {
         `;
 }
 
-// batman

@@ -148,12 +148,12 @@ main {
   }
 
   .movieContiner{
-    height: 20vh;
+    height: 25vh;
     overflow: scroll;
   }
 
   #moviePoster{
-    width: 27vw;
+    width: 12vh;
   }
   .movieData h1{
     font-size: 7vw;
@@ -176,10 +176,15 @@ main {
 
   .movieData #releaseDate, #director, #genres, #runTime{
     font-size: 3vw;
+    margin: 0.2rem;
   }
 
   .movieData #genres{
     margin: 1vw;
+  }
+
+  .fa-solid{
+    font-size: 15px;
   }
 
   
