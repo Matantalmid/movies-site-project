@@ -218,6 +218,11 @@ main {
   color: #bbd111;
 }
 
+.favoriteBtn{
+  background-color: #ffffff00;
+  border: none;
+}
+
 .btnPageContainer {
   display: flex;
   justify-content: center;

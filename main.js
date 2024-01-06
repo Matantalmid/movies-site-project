@@ -153,7 +153,7 @@ function showTrending(data) {
         <div class="runTimeRateContainer">
           <p>${movie.vote_average}</p>
           <p>126m</p>
-          <button class="favoriteBtn"><i class="fa-regular fa-heart fa-xl"></i></button>
+          <button class="favoriteBtn"><i class="fa-solid fa-heart" style="color: #ef0b0b;"></i></i></button>
         </div>
       </div>
     `;

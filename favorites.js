@@ -28,7 +28,6 @@ function displayFavorites() {
 
     const container = document.querySelector(".container");
     container.innerHTML =`
-    <h1>Your Favorites <span>Movies</span></h1>
     <div class="favoritesMoviesContainer"></div>
     `;
     const favoritesMoviesContainer = document.querySelector(".favoritesMoviesContainer")
