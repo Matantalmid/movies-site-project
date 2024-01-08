@@ -7,10 +7,9 @@
 
 body {
   margin: 0;
-  width: 100vw;
   display: grid;
   grid-template-columns: 10% 20% 20% 20% 20% 10%;
-  grid-template-rows: 10vh 1fr 1fr 1fr 10vh;
+  grid-template-rows: 10vh 30vh 30vh 30vh 10vh;
   background-color: #222;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -20,4 +19,54 @@ main {
   display: flex;
   flex-direction: column;
   background-color: #343434;
+}
+
+.container{
+  display: flex;
+}
+
+#photo{
+  width: 40%;
+}
+
+h1{
+  margin-bottom: 2vh;
+}
+
+.community{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30vh;  
+}
+
+.community div i{
+  font-size: 4vh;
+}
+
+.community div a{
+  font-size: 4vh;
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    width: 100vw;
+  }
+  main{
+    grid-area: 2 / 1 / 5 / 7;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #photo{
+    width: 80vw;
+  }
+
+  .community{
+    margin: 0;
+  }
 }

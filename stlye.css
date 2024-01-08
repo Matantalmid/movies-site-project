@@ -152,7 +152,6 @@ main {
 }
 
 .moviesContainer {
-  width: 100%;
   display: flex;
   overflow-x: scroll;
   gap: 1vw;

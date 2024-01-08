@@ -153,13 +153,20 @@ function showTrending(data) {
         <div class="runTimeRateContainer">
           <p>${movie.vote_average}</p>
           <p>126m</p>
-          <button class="favoriteBtn"><i class="fa-solid fa-heart" style="color: #ef0b0b;"></i></i></button>
+          <button class="favoriteBtn"><i class="fa-solid fa-heart" style="color: #ef0b0b;"></i></button>
         </div>
       </div>
     `;
 
     const favoriteBtn = movieCard.querySelector(".favoriteBtn");
     favoriteBtn.addEventListener("click", () => {
+      if (!favoriteBtn.disabled) {
+        favoriteBtn.disabled = true;
+      }
+
+      if (favoriteBtn.disabled) {
+        favoriteBtn.disabled = false;
+      }
       console.log("Favorite button clicked for movie:", movie.title);
       const myMovie = {
         poster: `${movie.poster_path}`,
