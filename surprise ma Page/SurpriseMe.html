@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Movie</title>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="searchName.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./SurpriseMe.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="font-awesome.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li>
-            <a href="index.html"
+            <a href="../index.html"
               ><i class="fa-solid fa-house" style="color: #ffffff"></i
             ></a>
           </li>
@@ -27,7 +28,7 @@
             >
           </li>
           <li>
-            <a href="searchName.html"
+            <a href="../search name Page/searchName.html"
               ><i
                 class="fa-solid fa-magnifying-glass"
                 style="color: #ffffff"
@@ -36,12 +37,12 @@
             >
           </li>
           <li>
-            <a href="aboutPage.html"
+            <a href="../about Page/aboutPage.html"
               ><i class="fa-solid fa-address-card" style="color: #ffffff"></i
             ></a>
           </li>
           <li>
-            <a href="favorites.html"
+            <a href="../favorits Page/favorites.html"
               ><i class="fa-solid fa-heart" style="color: #ef0b0b"></i
             ></a>
           </li>
@@ -49,12 +50,50 @@
       </nav>
     </header>
     <main>
+      <div class="searchContainer">
+        <button id="surpiseMeBtn">Surpise Me!</button>
+        <!-- שיניתי את ה-ID ל-searchIdBtn -->
+        <input id="idInput" type="text" placeholder="Enter Movie ID" />
+        <button id="searchIdBtn">Find My Movie!</button>
+        <!-- שיניתי את ה-ID ל-searchIdBtn -->
+      </div>
       <div class="container">
-        <h1 id="haedLinePage">Search Your <span>Movie</span></h1>
-        <input id="searchInput" type="text" placeholder="ex: Batman" />
-        <div class="moveisListContainer"></div>
+        <div class="moviePosterClass"></div>
+        <div class="movieContainer">
+          <h1 id="headline"></h1>
+          <div class="movieDataContainer">
+            <div class="movieData">
+              <div class="overviewContainer">
+                <h3></h3>
+                <p id="movieOverview"></p>
+              </div>
+              <div class="trailerContainer">
+                <h3></h3>
+                <!-- שיניתי את הכיתוב מ-"MADIA" ל-"MEDIA" -->
+                <div class="trailer"></div>
+              </div>
+              <div class="castContainer">
+                <h3></h3>
+                <div class="cast"></div>
+              </div>
+            </div>
+            <div class="movieInfoContainer">
+              <p>Director:</p>
+              <span id="director"></span>
+              <p>Writer:</p>
+              <span id="writer"></span>
+              <p>Release Date:</p>
+              <span id="releaseDate"></span>
+              <p>Run Time:</p>
+              <span id="runTime"></span>
+              <p>Genres:</p>
+              <span id="genres"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+
     <footer>
       <div class="links">
         <div class="porjects">
@@ -109,6 +148,6 @@
       src="https://kit.fontawesome.com/369a8e9316.js"
       crossorigin="anonymous"
     ></script>
-    <script src="searchName.js"></script>
+    <script src="SurpriseMe.js"></script>
   </body>
 </html>
