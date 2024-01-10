@@ -3,7 +3,8 @@ footer{
     background-color: #183153;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
+    height: 15vh;
 }
 
 footer p{
@@ -13,7 +14,7 @@ footer p{
 footer .links{
     display: flex;
     justify-content: space-between;
-    width: 25vw;
+    width: 100vw;
     margin-right: 10px;
 }
 
@@ -39,15 +40,15 @@ footer a {
     width: 45vw;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:500px){
     footer{
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .description p{
         margin-left: 0;
-        width: 80vw;
     }
 
     footer .links{
