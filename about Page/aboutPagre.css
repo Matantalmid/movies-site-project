@@ -22,36 +22,62 @@ main {
 }
 
 .container{
+  width: 100%;
+  height: 100%;
   display: flex;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.722) 10%,
+    rgba(0, 0, 0, 0.459) 40%,
+    rgba(0, 0, 0, 0) 55%
+  );
 }
 
 #photo{
-  width: 40%;
-}
-
-h1{
-  margin-bottom: 2vh;
+  width: 50%;
+  height: 90%;
+  align-self: center;
+  border: 3px solid wheat;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white;
 }
 
 .community{
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30vh;  
+  align-items: center;
 }
 
-.community div i{
-  font-size: 4vh;
+h1{
+  margin-bottom: 5vh;
+  font-size: 10vh;
+  color: white;
 }
 
-.community div a{
-  font-size: 4vh;
+span{
+  color: #bbd111;
 }
+
+.linksIncons a{
+  font-size: 4vh;
+  color: khaki;
+}
+
+.linksIncons i{
+  font-size: 4vh;
+  margin-right: 2vh;
+  color: #525252;
+}
+
 
 @media screen and (max-width: 500px) {
 
   body {
     width: 100vw;
+    grid-template-rows: 10vh 1fr 1fr 10vh;
+
   }
   main{
     grid-area: 2 / 1 / 5 / 7;
@@ -68,5 +94,10 @@ h1{
 
   .community{
     margin: 0;
+    margin-bottom: 15vh;
+  }
+
+  h1{
+    font-size: 7vh;
   }
 }
